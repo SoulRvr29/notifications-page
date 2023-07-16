@@ -104,6 +104,16 @@ figcaption {
   display: flex;
   justify-content: space-between;
 }
+.redDot:last-child:after {
+  position: relative;
+  top: 2px;
+  left: -3px;
+  font-size: 1.4rem;
+  line-height: 20%;
+  content: "";
+  content: "•";
+  color: var(--Red);
+}
 .name {
   color: var(--Very-dark-blue);
   font-weight: 800;

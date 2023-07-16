@@ -62,7 +62,7 @@ const Notification = () => {
       {notificationData.map((item) => (
         <figure
           style={
-            item.new == true
+            item.new
               ? { backgroundColor: "var(--Very-light-grayish-blue)" }
               : { backgroundColor: "unset" }
           }
@@ -72,7 +72,7 @@ const Notification = () => {
           </div>
           <figcaption>
             <div className="data">
-              <div className="spanContainer">
+              <div className={`spanContainer ${item.new && "redDot"}`}>
                 <span className="name">
                   <a href="#">{item.name}</a>{" "}
                 </span>
